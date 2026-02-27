@@ -6,8 +6,14 @@
     <body>
         <h1>Welcome to Vroom Vroom Car Washing!</h1>
         <h2>Our Services</h2>
-        <a href="exterior-wash.html">Exterior Wash</a>
-        <a href="interior-cleaning.html">Interior Cleaning</a>
-        <a href="detailing.html">Detailing</a>
+        <form>
+            <input type="checkbox" id="basic" name="service" value="basic">
+            <label for="basic">Basic Wash - $10</label><br>
+            <input type="checkbox" id="interior" name="service" value="interior">
+            <label for="interior">Interior + Basic Wash - $20</label><br>
+            <input type="checkbox" id="detailing" name="service" value="detailing">
+            <label for="detailing">Detailing + Interior + Basic Wash- $30</label><br><br>
+            <input type="submit" value="Book Now">
+        </form>
     </body>
 </html>
