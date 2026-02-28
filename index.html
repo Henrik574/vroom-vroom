@@ -7,13 +7,41 @@
         <h1>Welcome to Vroom Vroom Car Washing!</h1>
         <h2>Our Services</h2>
         <form>
-            <input type="checkbox" id="basic" name="service" value="basic">
-            <label for="basic">Basic Wash - $10</label><br>
-            <input type="checkbox" id="interior" name="service" value="interior">
-            <label for="interior">Interior + Basic Wash - $20</label><br>
-            <input type="checkbox" id="detailing" name="service" value="detailing">
-            <label for="detailing">Detailing + Interior + Basic Wash- $30</label><br><br>
-            <input type="submit" value="Book Now">
+            <fieldset>
+                <legend>Select a Wash Option</legend>
+                <ul>
+                    <li>
+                        <input type="radio" id="basic" name="service" value="basic" checked>
+                        <label for="basic">Basic Wash - $10 <a href="basic.html">ⓘ</a></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="interior" name="service" value="interior">
+                        <label for="deluxe">Interior + Basic Wash - $20 <a href="interior.html">ⓘ</a></label>
+                     </li>
+                    <li>
+                         <input type="radio" id="detailing" name="service" value="detailing">
+                        <label for="premium">Detailing + Interior + Basic Wash - $30 <a href="detailing.html">ⓘ</a></label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Information</legend>
+                    <ul>
+                    <div class="form-group">
+                        <input type="text" id="street_address" name="street_address" autocomplete="street-address" required>
+                        <label for="street_address">Street Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="city" name="city" autocomplete="address-level2" required>
+                        <label for="city">City</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="dext" id="zip_code" name="zip_code" autocomplete="postal-code" required pattern="[0-9]*">
+                        <label for="zip_code">ZIP or Postal Code</label>
+                    </div>
+                    </ul>
+            </fieldset>
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
