@@ -36,10 +36,21 @@
                         <label for="city">City</label>
                     </div>
                     <div class="form-group">
-                        <input type="dext" id="zip_code" name="zip_code" autocomplete="postal-code" required pattern="[0-9]*">
-                        <label for="zip_code">ZIP or Postal Code</label>
+                        <input type="text" id="zip_code" name="zip_code" autocomplete="postal-code" required pattern="[0-9]*">
+                        <label for="zip_code">ZIP Code</label>
                     </div>
                     </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Date</legend>
+                <div>
+                    <input type="text" id="date" required>
+                    <label for="date">What day do you want us to come?</label>
+                </div>
+                <div>
+                    <input type="text" id="time" required>
+                    <label for="time">What time do you want us to come?</label>
+                </div>
             </fieldset>
             <button type="submit">Submit</button>
         </form>
